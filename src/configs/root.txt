@@ -1,0 +1,50 @@
+:root{
+    --body-bg: #0f172a;
+    --nav-bg: #111827;
+    --nav-border-bottom: 1px solid #1f2937;
+    --nav-h: 70px;
+    --nav-p: 0 70px;
+    --nav-display: flex;
+    --nav-justify: center;
+    --nav-align: center;
+    --nav-position: sticky;
+    --ul-gap: 35px;
+    --logo-color: white;
+    --logo-font-size: 25px;
+    --logo-font-weight: bold;
+    --logo-hover-color: #60a5fa;
+    --logo-hover-text-shadow: 0 0 10px #2563eb;
+    --a-color: #d1d5db;
+    --a-font-size: 16px;
+    --a-display: inline-block;
+    --a-transition: 0.3s;
+    --a-padding: 8px 0px;
+    --li-a-after-position: absolute;
+    --li-a-after-left: 50%;
+    --li-a-after-bottom: 0px;
+    --li-a-after-width: 0;
+    --li-a-after-height: 2px;
+    --li-a-after-background: #3b82f6;
+    --li-a-after-box-shadow: 0 0 8px #3b82f6;
+    --li-a-after-transform: translateX(-50%);
+    --li-a-after-transition: 0.3s ease;
+    --li-hover-a-color: #60a5fa;
+    --li-hover-a-text-shadow: 0 0 5px #3b82f6,
+                              0 0 15px #2563eb;
+    --li-hover-a-transform: translateY(-3px);
+    --btn-background-color: #2563eb;
+    --btn-background-height: 50px;
+    --btn-background-border-radius: 8px;
+    --btn-background-border: none;
+    --btn-background-width: 100px;
+    --btn-color: white;
+    --btn-background-cursor: pointer;
+    --btn-background-transition: 0.3s;
+    --btn-hover-background-color: #1d4ed8;
+    --btn-hover-transform: translateY(-4px);
+    --btn-hover-box-shadow:
+    0 0 10px #2563eb,
+    0 0 25px rgba(37, 99, 235, 0.5);
+    --btn-hover-text-shadow: 0 0 5px white;
+    --btn-active-transform: translateY(0);
+}
