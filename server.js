@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url'
 import Navbar from './src/Routes/Navbar.route.js'
 
 const app = express()
-const port = 3000
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
@@ -15,7 +14,3 @@ app.get('/', (req, res) => {
 })
 
 app.use("/apis", Navbar);
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
