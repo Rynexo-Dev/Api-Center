@@ -15,8 +15,11 @@ app.use(express.static(templatesPath));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(templatesPath, "index.html"));
-}).get('/css/style.css', (req, res) => {
-  res.sendFile(path.join(templatesPath, "style.css"))
+}).get("/css/style.css", (req, res) => {
+    res.type("css");
+    res.sendFile(
+        path.join(templatesPath, "style.css")
+    );
 });
 
 app.use("/apis", Navbar);
