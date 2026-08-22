@@ -11,22 +11,14 @@ const __dirname = path.dirname(__filename);
 
 const templatesPath = path.join(__dirname, "src", "templates");
 
+app.use(express.static(templatesPath));
 
-/* HTML */
 app.get("/", (req, res) => {
     res.sendFile(path.join(templatesPath, "index.html"));
+}).get('/css/style.css', (req, res) => {
+  res.sendFile(path.join(templatesPath, "style.css"))
 });
 
-
-/* CSS */
-app.use(
-    "/css",
-    express.static(templatesPath)
-);
-
-
-/* API */
 app.use("/apis", Navbar);
-
 
 export default app;
