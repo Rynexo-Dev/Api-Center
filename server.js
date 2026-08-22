@@ -14,3 +14,5 @@ app.get('/', (req, res) => {
 })
 
 app.use("/apis", Navbar);
+
+export default app;
