@@ -1,0 +1,701 @@
+:root {
+
+    /* =========================
+       GLOBAL
+    ========================= */
+
+    --body-bg: #0f172a;
+    --white: #ffffff;
+
+    --blue: #2563eb;
+    --blue-light: #3b82f6;
+    --blue-hover: #1d4ed8;
+
+    --text-light: #d1d5db;
+    --text-muted: #e5e7eb;
+    --text-hover: #60a5fa;
+
+    --border: #1f2937;
+
+    --nav-bg: #111827;
+    --title-bg: #172033;
+    --title-hover-bg: #19243a;
+    --code-bg: #0b1120;
+    --pre-bg: #020617;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.35s ease;
+
+
+    /* =========================
+       NAV
+    ========================= */
+
+    --nav-bg: #111827;
+    --nav-border-bottom: 1px solid var(--border);
+
+    --nav-h: 70px;
+    --nav-p: 0 70px;
+
+    --nav-display: flex;
+    --nav-justify: space-between;
+    --nav-align: center;
+    --nav-position: sticky;
+
+
+    /* =========================
+       UL
+    ========================= */
+
+    --ul-gap: 35px;
+
+
+    /* =========================
+       LOGO
+    ========================= */
+
+    --logo-color: var(--white);
+    --logo-font-size: 25px;
+    --logo-font-weight: 700;
+
+    --logo-transition: var(--transition-normal);
+
+    --logo-hover-color: var(--text-hover);
+
+    --logo-hover-text-shadow:
+        0 0 10px var(--blue);
+
+
+    /* =========================
+       LINK
+    ========================= */
+
+    --a-color: var(--text-light);
+    --a-font-size: 16px;
+    --a-display: inline-block;
+    --a-padding: 8px 0;
+    --a-transition: var(--transition-normal);
+
+
+    /* =========================
+       LI A AFTER
+    ========================= */
+
+    --li-a-after-position: absolute;
+    --li-a-after-left: 50%;
+    --li-a-after-bottom: 0;
+
+    --li-a-after-width: 0;
+    --li-a-after-height: 2px;
+
+    --li-a-after-background: var(--blue-light);
+
+    --li-a-after-box-shadow:
+        0 0 8px var(--blue-light);
+
+    --li-a-after-transform: translateX(-50%);
+    --li-a-after-transition: var(--transition-normal);
+
+
+    /* =========================
+       LI HOVER A
+    ========================= */
+
+    --li-hover-a-color: var(--text-hover);
+
+    --li-hover-a-text-shadow:
+        0 0 5px var(--blue-light),
+        0 0 15px var(--blue);
+
+    --li-hover-a-transform: translateY(-3px);
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    --btn-bg: var(--blue);
+    --btn-h: 50px;
+    --btn-w: 180px;
+
+    --btn-p: 10px 20px;
+    --btn-font-size: 18px;
+    --btn-font-weight: bold;
+    --btn-border: none;
+    --btn-border-radius: var(--radius-sm);
+
+    --btn-color: var(--white);
+    --btn-cursor: pointer;
+
+    --btn-transition: var(--transition-normal);
+
+
+    /* =========================
+       BUTTON HOVER
+    ========================= */
+
+    --btn-hover-bg: var(--blue-hover);
+    --btn-hover-transform: translateY(-4px);
+
+    --btn-hover-box-shadow:
+        0 0 10px var(--blue),
+        0 0 25px rgba(37, 99, 235, 0.5);
+
+    --btn-hover-text-shadow:
+        0 0 5px var(--white);
+
+
+    /* =========================
+       BUTTON ACTIVE
+    ========================= */
+
+    --btn-active-transform: translateY(0);
+
+
+    /* =========================
+       CARD
+    ========================= */
+
+    --card-max-width: 1000px;
+    --card-bg: var(--nav-bg);
+
+    --card-border: 1px solid var(--border);
+    --card-radius: var(--radius-md);
+
+    --card-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(37, 99, 235, 0.08);
+
+    --card-hover-border: var(--blue);
+
+    --card-hover-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.45),
+        0 0 20px rgba(37, 99, 235, 0.2),
+        0 0 45px rgba(37, 99, 235, 0.08);
+
+
+    /* =========================
+       TITLE
+    ========================= */
+
+    --title-p: 20px 25px;
+    --title-color: var(--white);
+    --title-font-size: 22px;
+    --title-font-weight: 700;
+    --title-bg: var(--title-bg);
+
+    --title-border-bottom: 1px solid var(--border);
+
+    --title-hover-color: var(--text-hover);
+    --title-hover-bg: var(--title-hover-bg);
+
+    --title-hover-text-shadow:
+        0 0 5px var(--blue-light),
+        0 0 15px rgba(37, 99, 235, 0.5);
+
+
+    /* =========================
+       CODE
+    ========================= */
+
+    --code-p: 25px;
+    --code-bg: var(--code-bg);
+    --code-color: var(--text-light);
+
+    --code-heading-margin-bottom: 15px;
+    --code-heading-color: var(--text-hover);
+    --code-heading-font-size: 16px;
+
+    --code-pre-p: 20px;
+    --code-pre-bg: var(--pre-bg);
+
+    --code-pre-border: 1px solid var(--border);
+    --code-pre-radius: var(--radius-sm);
+
+    --code-pre-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.25);
+
+    --code-pre-hover-border: var(--blue-light);
+
+    --code-pre-hover-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.3),
+        0 0 10px rgba(59, 130, 246, 0.25),
+        0 0 25px rgba(37, 99, 235, 0.1);
+
+    --code-font-family: "Fira Code", "Consolas", monospace;
+    --code-font-size: 14px;
+    --code-line-height: 1.7;
+
+    --code-hover-color: #f8fafc;
+
+    --code-hover-text-shadow:
+        0 0 4px rgba(96, 165, 250, 0.25);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-bg);
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+    height: var(--nav-h);
+    padding: var(--nav-p);
+
+    display: var(--nav-display);
+    justify-content: var(--nav-justify);
+    align-items: var(--nav-align);
+
+    position: var(--nav-position);
+    top: 0;
+    z-index: 1000;
+
+    background-color: var(--nav-bg);
+    border-bottom: var(--nav-border-bottom);
+}
+
+
+/* =========================
+   UL
+========================= */
+
+nav ul {
+    display: flex;
+    gap: var(--ul-gap);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    color: var(--logo-color);
+    font-size: var(--logo-font-size);
+    font-weight: var(--logo-font-weight);
+
+    transition:
+        color var(--logo-transition),
+        text-shadow var(--logo-transition);
+}
+
+.logo:hover {
+    color: var(--logo-hover-color);
+    text-shadow: var(--logo-hover-text-shadow);
+}
+
+
+/* =========================
+   LI
+========================= */
+
+nav li {
+    position: relative;
+    list-style: none;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+nav a {
+    display: var(--a-display);
+
+    padding: var(--a-padding);
+
+    color: var(--a-color);
+    font-size: var(--a-font-size);
+
+    text-decoration: none;
+
+    transition:
+        color var(--a-transition),
+        transform var(--a-transition),
+        text-shadow var(--a-transition);
+}
+
+
+/* =========================
+   LINK AFTER
+========================= */
+
+nav li a::after {
+    content: "";
+
+    position: var(--li-a-after-position);
+
+    left: var(--li-a-after-left);
+    bottom: var(--li-a-after-bottom);
+
+    width: var(--li-a-after-width);
+    height: var(--li-a-after-height);
+
+    background: var(--li-a-after-background);
+
+    box-shadow: var(--li-a-after-box-shadow);
+
+    transform: var(--li-a-after-transform);
+
+    transition: width var(--li-a-after-transition);
+}
+
+
+/* =========================
+   LINK HOVER
+========================= */
+
+nav li:hover a {
+    color: var(--li-hover-a-color);
+
+    text-shadow: var(--li-hover-a-text-shadow);
+
+    transform: var(--li-hover-a-transform);
+}
+
+nav li:hover a::after {
+    width: 100%;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn button{
+    width: var(--btn-w);
+    height: var(--btn-h);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    padding: var(--btn-p);
+
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+
+    cursor: var(--btn-cursor);
+
+    transition:
+        background-color var(--btn-transition),
+        transform var(--btn-transition),
+        box-shadow var(--btn-transition),
+        text-shadow var(--btn-transition);
+}
+
+.btn:hover button{
+    background-color: var(--btn-hover-bg);
+
+    transform: var(--btn-hover-transform);
+
+    box-shadow: var(--btn-hover-box-shadow);
+
+    text-shadow: var(--btn-hover-text-shadow);
+}
+
+.btn:active button{
+    transform: var(--btn-active-transform);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    min-height: calc(100vh - var(--nav-h));
+
+    padding: 50px 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: var(--body-bg);
+
+    animation: mainFadeIn 0.8s ease both;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 100%;
+    max-width: var(--card-max-width);
+
+    background: var(--card-bg);
+
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+
+    box-shadow: var(--card-shadow);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition-slow),
+        box-shadow var(--transition-slow),
+        border-color var(--transition-slow);
+
+    animation: cardSlideUp 0.8s ease both;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--card-hover-border);
+
+    box-shadow: var(--card-hover-shadow);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+    padding: var(--title-p);
+
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+
+    background: var(--title-bg);
+
+    border-bottom: var(--title-border-bottom);
+
+    transition:
+        color var(--transition-normal),
+        background-color var(--transition-normal),
+        text-shadow var(--transition-normal);
+}
+
+.card:hover .title {
+    color: var(--title-hover-color);
+
+    background: var(--title-hover-bg);
+
+    text-shadow: var(--title-hover-text-shadow);
+}
+
+
+/* =========================
+   CODE
+========================= */
+
+.code {
+    padding: var(--code-p);
+
+    color: var(--code-color);
+    background: var(--code-bg);
+}
+
+
+/* =========================
+   CODE HEADING
+========================= */
+
+.code h3 {
+    margin-bottom: var(--code-heading-margin-bottom);
+
+    color: var(--code-heading-color);
+    font-size: var(--code-heading-font-size);
+
+    transition:
+        color var(--transition-normal),
+        transform var(--transition-normal),
+        text-shadow var(--transition-normal);
+}
+
+.code h3:hover {
+    color: #93c5fd;
+
+    transform: translateX(5px);
+
+    text-shadow:
+        0 0 5px var(--blue-light),
+        0 0 12px var(--blue);
+}
+
+
+/* =========================
+   PRE
+========================= */
+
+.code pre {
+    margin: 0;
+    padding: var(--code-pre-p);
+
+    overflow-x: auto;
+
+    background: var(--code-pre-bg);
+
+    border: var(--code-pre-border);
+    border-radius: var(--code-pre-radius);
+
+    box-shadow: var(--code-pre-shadow);
+
+    transition:
+        transform var(--transition-normal),
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.code pre:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--code-pre-hover-border);
+
+    box-shadow: var(--code-pre-hover-shadow);
+}
+
+
+/* =========================
+   CODE TEXT
+========================= */
+
+.code code {
+    color: var(--text-muted);
+
+    font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
+    line-height: var(--code-line-height);
+
+    white-space: pre;
+
+    transition:
+        color var(--transition-normal),
+        text-shadow var(--transition-normal);
+}
+
+.code pre:hover code {
+    color: var(--code-hover-color);
+
+    text-shadow: var(--code-hover-text-shadow);
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes mainFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .title {
+        padding: 16px 18px;
+    }
+
+    .code {
+        padding: 15px;
+    }
+
+    .code pre {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 90px;
+        height: 44px;
+        padding: 8px 14px;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
